@@ -64,7 +64,7 @@ const App = () => {
 
     const editedIndexes = Object.keys(editedRows).map(Number);
 
-    console.log('edited:', editedIndexes);
+    console.log('Edited rows:', editedIndexes);
   };
   return (
     <div>
