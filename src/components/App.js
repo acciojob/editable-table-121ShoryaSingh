@@ -60,7 +60,9 @@ const App = () => {
 
     setTableData(updateData);
 
-    const editedIndexes = Object.keys(editedRows).map(Number + 1);
+    editedRowsRef.current = {};
+
+    const editedIndexes = Object.keys(editedRows).map(Number);
 
     console.log('edited:', editedIndexes);
   };
@@ -86,7 +88,7 @@ const App = () => {
                       type={col === 'age' ? 'number' : 'text'}
                       defaultValue={item[col]}
                       onChange={(e) =>
-                        handleInputChange(rowIndex, col, e.target.value)
+                        handleInputChange(item.id, col, e.target.value)
                       }
                     />
                   </td>
