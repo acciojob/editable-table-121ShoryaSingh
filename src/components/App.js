@@ -4,33 +4,33 @@ import './../styles/App.css';
 const data = [
   {
     id: 1,
-    name: 'Ash',
-    age: '24',
-  },
-  {
-    id: 2,
-    name: 'Misty',
+    name: 'Ram',
     age: '25',
   },
   {
+    id: 2,
+    name: 'Shyam',
+    age: '30',
+  },
+  {
     id: 3,
-    name: 'Brock',
-    age: '26',
+    name: 'Ali',
+    age: '35',
   },
   {
     id: 4,
-    name: 'Naruto',
+    name: 'Shaw',
     age: '20',
   },
   {
     id: 5,
-    name: 'Asta',
-    age: '14',
+    name: 'Tavneet',
+    age: '50',
   },
   {
     id: 6,
-    name: 'Sung jinwo',
-    age: '22',
+    name: 'Lakshmi',
+    age: '40',
   },
 ];
 
@@ -60,7 +60,7 @@ const App = () => {
 
     setTableData(updateData);
 
-    const editedIndexes = Object.keys(editedRows).map(Number);
+    const editedIndexes = Object.keys(editedRows).map(Number + 1);
 
     console.log('edited:', editedIndexes);
   };
