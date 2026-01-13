@@ -1,0 +1,4 @@
+{
+    "testRepo": "editable-table-solution",
+    "pathToFile": "cypress/integration/tests/test.spec.js"
+}
